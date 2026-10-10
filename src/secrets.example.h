@@ -4,3 +4,4 @@
 #define WIFI_SSID ""
 #define WIFI_PASSWORD ""
 #define HOSTNAME "plant-pot"
+#define OTA_PASSWORD ""  // also export PLANT_POT_OTA_PASSWORD for OTA uploads

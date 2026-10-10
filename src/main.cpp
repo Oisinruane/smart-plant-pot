@@ -63,6 +63,7 @@ void setupNetwork() {
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   MDNS.begin(HOSTNAME);
   ArduinoOTA.setHostname(HOSTNAME);
+  ArduinoOTA.setPassword(OTA_PASSWORD);
   ArduinoOTA.begin();
   server.on("/api/moisture", handleApi);
   server.begin();
